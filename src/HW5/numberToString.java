@@ -3,11 +3,7 @@ package HW5;
 // We need a function that can transform a number into a string.
 
 
-public class Kata {
-    public static void main(String[] args) {
-
-        System.out.println(numberToString(6544));
-    }
+public class numberToString {
 
 
     public static String numberToString(int num) {
