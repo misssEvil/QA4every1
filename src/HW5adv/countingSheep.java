@@ -1,5 +1,4 @@
-package HW5;
-import java.awt.font.NumericShaper;
+package HW5adv;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 

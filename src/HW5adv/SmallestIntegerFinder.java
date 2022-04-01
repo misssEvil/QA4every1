@@ -6,7 +6,7 @@
 //Given [34, -345, -1, 100] your solution will return -345
 //You can assume, for the purpose of this kata, that the supplied array will not be empty.
 
-package HW5;
+package HW5adv;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;

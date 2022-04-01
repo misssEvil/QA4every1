@@ -1,4 +1,4 @@
-package HW5;
+package HW5adv;
 //https://www.codewars.com/kata/53ee5429ba190077850011d4/train/java
 //You need to double the integer and return it
 

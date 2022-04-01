@@ -1,4 +1,4 @@
-package HW5;
+package HW5adv;
 //https://www.codewars.com/kata/555086d53eac039a2a000083/train/java
 //Timmy & Sarah think they are in love, but around where they live,they will only know once they
 // pick a flower each. If one of the flowers has an even number of petals and the other has
