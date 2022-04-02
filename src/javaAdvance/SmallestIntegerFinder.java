@@ -6,7 +6,7 @@
 //Given [34, -345, -1, 100] your solution will return -345
 //You can assume, for the purpose of this kata, that the supplied array will not be empty.
 
-package HW5adv;
+package javaAdvance;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -19,12 +19,12 @@ public class SmallestIntegerFinder {
         int [] array = new int[arrayLength];
         System.out.println("enter array elements each on new row");
 
-        for (int i = 0; i <= arrayLength - 1; i++){
+        for (int i = 0; i < arrayLength - 1; i++){
             array[i] = Integer.parseInt(reader.readLine());
         }
 
         System.out.print("our arrays is ");
-        for (int i=0; i < array.length; i++ ){
+        for (int i = 0; i < array.length; i++ ){
             System.out.print(array[i] +" ");
         }
         System.out.println();

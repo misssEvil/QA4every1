@@ -1,4 +1,4 @@
-package javaBeginners;
+package Common;
 
 public class Verification {
 

@@ -1,6 +1,8 @@
 package javaBeginners;
 import java.sql.SQLOutput;
 import java.util.Arrays;
+import Common.Printing;
+import Common.Verification;
 
 //Все результаты вашей работы необходимо выводить на печать с номером задания.
 // Результаты должны быть протестированы, для этого необходимо создать
@@ -9,14 +11,16 @@ import java.util.Arrays;
 public class HW5 {
     public static void main(String[] args) {
 
-        Print.Print(2);
+        Printing.Print(2);
+
+
 
         System.out.println(dayOfWeek(5));
 
-        Print.Print(3);
+        Printing.Print(3);
         System.out.println(largestValue(10,2,58));
 
-        Print.Print(3);
+        Printing.Print(3);
         System.out.println(smallestValue(10, 64, 1));
         System.out.println(smallestValue2(40, 14, -5));
         System.out.println(avgTemp(37.2, 37.4, 37.1, 37.3, 37.5) + " C");
@@ -61,8 +65,8 @@ public class HW5 {
     }
 
     public static Integer smallestValue2(int a, int b, int c){
-        int smallest = Math.min(Math.min(a, b), c);
-        return smallest;
+
+        return Math.min(Math.min(a, b), c);
     }
 
 
