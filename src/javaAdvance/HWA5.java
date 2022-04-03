@@ -6,32 +6,7 @@ import Common.Printing;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
-public class HWA5_task1 {
-    public static void main(String[] args) {
-
-        Printing.Print(1);
-        System.out.println("Doing simple math operations");
-        System.out.println("5 + 6 = " + MathOperations.Addition(5,6));
-        System.out.println("45 - 19 =" + MathOperations.Subtraction(45,19));
-        System.out.println("23 * 7 = " + MathOperations.Multiplication(23,7));
-        System.out.println("89 / 5 = " + MathOperations.Division(89,5));
-
-        Printing.Print(2);
-        System.out.println(countingSheep(12));
-
-        Printing.Print(3);
-        System.out.println(doubleInteger(5));
-
-        Printing.Print(4);
-        System.out.println(numberToString(562));
-
-        Printing.Print(5);
-        System.out.println(isLove(7,8));
-
-
-
-
-    }
+public class HWA5 {
 
     public static String countingSheep(int num){
         String s = "";
