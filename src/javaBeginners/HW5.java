@@ -1,30 +1,58 @@
 package javaBeginners;
-import java.sql.SQLOutput;
+import java.text.DecimalFormat;
 import java.util.Arrays;
+
+import Common.Printing;
 
 //Все результаты вашей работы необходимо выводить на печать с номером задания.
 // Результаты должны быть протестированы, для этого необходимо создать
 // метод с названием verifyEquals(expectedResult, actualResult)
 
 public class HW5 {
-    public static void main(String[] args) {
+    public static void main(String[] args)   {
+        /*
 
-        Print.Print(2);
-
+        Printing.Print(2);
         System.out.println(dayOfWeek(5));
 
-        Print.Print(3);
+        Printing.Print(3);
         System.out.println(largestValue(10,2,58));
 
-        Print.Print(3);
+        Printing.Print(4);
         System.out.println(smallestValue(10, 64, 1));
         System.out.println(smallestValue2(40, 14, -5));
+        System.out.println(Verification.verifyEquals(1, smallestValue(10, 64, 1)));
+
+        Printing.Print(5);
         System.out.println(avgTemp(37.2, 37.4, 37.1, 37.3, 37.5) + " C");
         System.out.println("Purchase amount: " + findTotal(10.99, 4) + "$");
-        System.out.println(Verification.verifyEquals(1, smallestValue(10, 64, 1)));
+
+
+
+        Printing.Print(6);
+        System.out.println(printPrice(472.99f));
+
+        Printing.Print(7);
+        System.out.println(printQuantity(17.010f));
+
+        Printing.Print(8);
+        System.out.println("Total: " + findTotal(5.99, 6));
+
+         */
+
+        Printing.PrintTask(9);
+        System.out.println(printReceipt("apples", 2.15f, 3));
+
+
+
+
+       // System.out.println(str2);
+
+
+
     }
 
-    // 2. Написать метод, который принимает на вход число от 1 до 7  и возвращает день недели.
+
     public static String dayOfWeek(int day){
 
         String [] weekDays = new String[] {"Mon", "Tue", "Wed", "Thur", "Fri", "Sat", "Sun"};
@@ -32,7 +60,7 @@ public class HW5 {
     }
 
 
-    // 3. Given three values x, y, z, determine the largest value and assign this value to the variable largest
+
     public static Integer largestValue(int x, int y, int z){
         
         int largest = 0;
@@ -43,9 +71,7 @@ public class HW5 {
     }
 
 
-    // 4. Using nested if statement, write a fragment of code that prints the smallest value contained
-    // in the variables a, b, c
-    public static Integer smallestValue(int a, int b, int c){
+     public static Integer smallestValue(int a, int b, int c){
         int smallest = 0;
 
         if ( b > a && c > a ){
@@ -61,12 +87,12 @@ public class HW5 {
     }
 
     public static Integer smallestValue2(int a, int b, int c){
-        int smallest = Math.min(Math.min(a, b), c);
-        return smallest;
+
+        return Math.min(Math.min(a, b), c);
     }
 
 
-    // 5. Написать алгоритм вычисления среднего значения из 5 показателей температуры тела кота.
+
     public static Double avgTemp(double a, double b, double c, double d, double e){
         double sum = 0;
         double temp [] = new double[] {a, b, c, d, e};
@@ -79,27 +105,48 @@ public class HW5 {
     }
 
 
-    // 6. Написать метод, который принимает на вход десятичное число (например, 10.75),
-    // и возвращает строку “10 руб 75 коп”.
-    public static String printPrice(double a){
-        String s = (int) a + "руб ";
+    public static String printPrice(float a){
 
-
+        DecimalFormat dkop = new DecimalFormat("#");
+        String s = (int) a + " руб " + dkop.format(a * 100 - (int) a * 100 ) +  " коп";
         return s;
+
     }
 
-    // 7. Написать метод, который принимает на вход десятичное число и возвращает строку “10 кг 75 гр”.
+    public static String printQuantity(float a){
 
-    // 8. Написать метод, который принимает на вход десятичное число (например, 10.75),
-    // и возвращает строку “10 руб 75 коп”.
+        DecimalFormat dgramm = new DecimalFormat("#");
+        String s = (int) a + " kg " + dgramm.format(a * 1000 - (int) a * 1000 ) +  " gr";
+        return s;
 
-    // 9. Написать метод, который принимает на вход 2 параметра -  цену и количество товара (может быть вес товара, или количество в штуках).
-    // Алгоритм возвращает сумму покупки в виде десятичного числа.
+    }
+
 
     public static Double findTotal(double price, double quantity){
         return price * quantity;
 
     }
+
+    public static String printReceipt(String itemName, float price, double quantity)  {
+
+        DecimalFormat dnum = new DecimalFormat("#.##");
+
+
+
+        return itemName + "\n"
+                + "Price "
+                + "Quantity "
+
+                ;
+
+
+
+
+
+
+    }
+
+
 
 
 

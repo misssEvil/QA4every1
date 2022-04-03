@@ -1,20 +1,19 @@
-package HW5adv;
+package javaAdvance;
+
+
+import Common.Printing;
+
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
-//https://www.codewars.com/kata/5b077ebdaf15be5c7f000077/train/java
-//Task:
-//Given a non-negative integer, 3 for example, return a string with a murmur:
-// "1 sheep...2 sheep...3 sheep...". Input will always be valid, i.e. no negative integers.
-
-public class countingSheep {
+public class HWA5 {
 
     public static String countingSheep(int num){
         String s = "";
 
-            for (int i = 1; i < num + 1; i++){
-                s = s + i + " sheep...";
-            }
+        for (int i = 1; i < num + 1; i++){
+            s = s + i + " sheep...";
+        }
 
         return s;
     }
@@ -42,21 +41,23 @@ public class countingSheep {
                 .mapToObj(i -> i + " sheep...")
                 .collect(Collectors.joining());
     }
-}
 
+    public static int doubleInteger(int i) {
+        return i*2;
 
-/*
-import org.junit.Test;
-import static org.junit.Assert.assertEquals;
-import org.junit.runners.JUnit4;
-
-public class SolutionTest {
-    @Test
-    public void testSomething() {
-        assertEquals("", Kata.countingSheep(0));
-        assertEquals("1 sheep...", Kata.countingSheep(1));
-        assertEquals("1 sheep...2 sheep...", Kata.countingSheep(2));
-        assertEquals("1 sheep...2 sheep...3 sheep...", Kata.countingSheep(3));
     }
+
+    public static String numberToString(int num) {
+        String numberToString = Integer.toString(num);
+
+        return Integer.toString(num);
+    }
+
+    public static boolean isLove(final int flower1, final int flower2) {
+
+        return ((flower1 % 2 == 0 && flower2 % 2 == 1) || ( flower1 % 2 == 1 && flower2 % 2 == 0));
+
+    }
+
+
 }
- */
