@@ -40,7 +40,7 @@ public class HW5 {
 
          */
 
-        Printing.PrintTask(9);
+        Printing.PrintTask("9");
         System.out.println(printReceipt("apples", 2.15f, 3));
 
 

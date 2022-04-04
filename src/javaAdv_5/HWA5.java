@@ -1,7 +1,5 @@
-package javaAdvance;
+package javaAdv_5;
 
-
-import Common.Printing;
 
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;

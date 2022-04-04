@@ -1,7 +1,4 @@
-package javaAdvance;
-import java.util.stream.Collectors;
-import java.util.stream.IntStream;
-
+package javaAdv_5;
 
 
 public class HWA5_tests {
