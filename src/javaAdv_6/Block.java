@@ -1,4 +1,4 @@
-package javaAdvance;
+package javaAdv_6;
 
 public class Block {
 
@@ -12,8 +12,9 @@ public class Block {
 
     Block(int [] dim){
         width = dim[0];
-        height = dim[1];
-        length = dim[2];
+        length = dim[1];
+        height = dim[2];
+
     }
 
 

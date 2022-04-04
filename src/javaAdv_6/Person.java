@@ -1,10 +1,14 @@
-package javaAdvance;
+package javaAdv_6;
 
 public class Person {
 
-    private String name;
-    private int age;
-    private String gender;
+    protected String name;
+    protected int age;
+    protected String gender;
+
+    Person(){
+
+    }
 
     Person(String name, int age, String gender){
         this.name = name;
@@ -13,7 +17,7 @@ public class Person {
 
     }
 
-    String getName(){
+    String getName(){  // array for gender values
         if (gender == "female"){
             return "Mrs. " + name;
         }

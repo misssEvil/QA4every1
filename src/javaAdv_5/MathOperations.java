@@ -1,4 +1,4 @@
-package javaAdvance;
+package javaAdv_5;
 
 
 public class MathOperations {
