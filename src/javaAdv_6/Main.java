@@ -25,7 +25,7 @@ public class Main {
         Employee e3 = new Employee("Charly", 21, "female", 2200f);
 
         System.out.println(e1.isSameEmployee(e1,"Patrick"));
-        System.out.println(e2.isSameEmployee(e2,"Ann"));
+        System.out.println(e2.isSameEmployee(e2,"Gemma"));
 
         Printing.PrintTask("4");
         Employee [] empArr = new Employee[] {e1, e2, e3};
