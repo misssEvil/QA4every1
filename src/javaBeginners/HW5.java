@@ -10,35 +10,35 @@ import Common.Printing;
 
 public class HW5 {
     public static void main(String[] args)   {
-        /*
 
-        Printing.Print(2);
+
+        Printing.PrintTask("2");
         System.out.println(dayOfWeek(5));
 
-        Printing.Print(3);
+        Printing.PrintTask("3");
         System.out.println(largestValue(10,2,58));
 
-        Printing.Print(4);
+        Printing.PrintTask("4");
         System.out.println(smallestValue(10, 64, 1));
         System.out.println(smallestValue2(40, 14, -5));
-        System.out.println(Verification.verifyEquals(1, smallestValue(10, 64, 1)));
+        System.out.println(Common.Verification.verifyEquals(1, smallestValue(10, 64, 1)));
 
-        Printing.Print(5);
+        Printing.PrintTask("5");
         System.out.println(avgTemp(37.2, 37.4, 37.1, 37.3, 37.5) + " C");
         System.out.println("Purchase amount: " + findTotal(10.99, 4) + "$");
 
 
 
-        Printing.Print(6);
+        Printing.PrintTask("6");
         System.out.println(printPrice(472.99f));
 
-        Printing.Print(7);
+        Printing.PrintTask("7");
         System.out.println(printQuantity(17.010f));
 
-        Printing.Print(8);
+        Printing.PrintTask("8");
         System.out.println("Total: " + findTotal(5.99, 6));
 
-         */
+
 
         Printing.PrintTask("9");
         System.out.println(printReceipt("apples", 2.15f, 3));
