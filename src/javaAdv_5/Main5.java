@@ -2,7 +2,7 @@ package javaAdv_5;
 
 import Common.Printing;
 
-public class Main {
+public class Main5 {
     public static void main(String[] args) {
 
         Printing.PrintHW("5");

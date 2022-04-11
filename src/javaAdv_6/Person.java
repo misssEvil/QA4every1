@@ -2,9 +2,9 @@ package javaAdv_6;
 
 public class Person {
 
-    protected String name;
-    protected int age;
-    protected String gender;
+    private String name;
+    private int age;
+    private String gender;
 
     Person(){
 
@@ -18,7 +18,7 @@ public class Person {
     }
 
     String getName(){  // array for gender values
-        if (gender == "female"){
+        if (gender.equals("female")) {
             return "Mrs. " + name;
         }
         else
