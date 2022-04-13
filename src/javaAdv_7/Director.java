@@ -14,11 +14,11 @@ public class Director extends Manager{
 
     public Float getSalary(){
         if ( numberOfSubs == 0){
-            this.salary = BASE_SALARY;
+            this.salary = BASE_SALARY_PER_MONTH;
         }
 
         else {
-            this.salary = BASE_SALARY * (numberOfSubs / 100 * 3) ;
+            this.salary = BASE_SALARY_PER_MONTH * (float)(numberOfSubs / 100 * 3) ;
         }
         return salary;
     }
