@@ -5,15 +5,18 @@ public class Employee {
 
     private String name;
     float salary;
-    static float BASE_SALARY = 3000f;
+    static float BASE_SALARY_PER_MONTH = 1000f;
+ //   static float BASE_SALARY_PER_DAY = 10f;
 
     Employee (){
 
     }
 
+
+
     Employee(String name, float salary){
         this.name = name;
-     //   this.salary = salary;
+        this.salary = salary;
 
     }
 
@@ -30,12 +33,14 @@ public class Employee {
     }
 
     void setSalary(float salary){
-        this.salary = BASE_SALARY;
+        this.salary = salary;
     }
 
     Float getBaseSalary(){
-        return BASE_SALARY;
+        return BASE_SALARY_PER_MONTH;
     }
+
+
 
 
 
