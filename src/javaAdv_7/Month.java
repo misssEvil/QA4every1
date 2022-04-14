@@ -2,15 +2,12 @@ package javaAdv_7;
 
 public class Month {
 
-
-
     private String nameOfMonth;
     private int numberOfDays;
 
     public Month(String nameOfMonth, int numberOfDays) {
         this.nameOfMonth = nameOfMonth;
         this.numberOfDays = numberOfDays;
-
     }
 
     public String getNameOfMonth() {

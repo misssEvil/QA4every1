@@ -15,11 +15,13 @@ public class MonthUtils {
     Month Nov = new Month("Nov", 30);
     Month Dec = new Month("Dec", 31);
 
-  //  Month [] months = new Month[12] { Jan, Feb, March, Apr, May, Jun, Jul, Aug, Sep, Oct,Nov, Dec};
+   public  Month [] months;
 
-    Month [] summerSeason = new Month[] {Jun, Jul, Aug};
-    Month [] autumnSeason = new Month[] { Sep, Oct, Nov};
-    Month [] halfYear = new Month[] {Jan, Feb, March, Apr, May, Jun};
+    {
+        months = new Month[]{Jan, Feb, March, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec};
+    }
+
+
 
 
 
