@@ -1,12 +1,13 @@
 package javaAdv_7;
 
 import Common.Printing;
+import javaAdv_7.MonthUtils;
 
 public class Main7 {
     public static void main(String[] args) {
 
-        Printing.PrintHW("7.1");
-        Printing.PrintTask("1");
+        Printing.printHW("7.1");
+        Printing.printTask("1");
 
         Employee e1 = new Employee("David", 2000f);
 
@@ -38,7 +39,7 @@ public class Main7 {
         }
         System.out.println();
 
-        Printing.PrintTask("2");
+        Printing.printTask("2");
 
         Manager [] managersArr = new Manager[]{m1, m2, m3, m4, d1, d2};
 
@@ -49,7 +50,7 @@ public class Main7 {
                     ", salary " + manager.getSalary());
         }
 
-        Printing.PrintTask("3");
+        Printing.printTask("3");
         System.out.println("Searching for an employee, who's name is Ivar...");
         EmployeeUtils.findViaName(employeesArr, "Ivar");
 
@@ -77,7 +78,7 @@ public class Main7 {
         System.out.println("Max number of subs is " + EmployeeUtils.findMaxNumberOfSubs(managersArr));
         System.out.println();
 
-        Printing.PrintHW("7.2");
+        Printing.printHW("7.2");
 
         Worker w1 = new Worker("Luck",19, 'M', 1f);
         Worker w2 = new Worker("Leya", 19, 'F', 2f);
@@ -88,10 +89,21 @@ public class Main7 {
         MonthUtils mn = new MonthUtils();
 
 
-        System.out.println(w1.getSalary(mn.summerSeason));
-        System.out.println(w2.getSalary(mn.summerSeason));
-        System.out.println(b1.getSalary(mn.autumnSeason));
-        System.out.println(b2.getSalary(mn.autumnSeason));
+       // System.out.println(w1.getSalary(mn.summerSeason));
+
+
+       // w1.getSalary({Feb, Nov, Jan});
+
+
+
+       // System.out.println(w2.getSalary(mn.summerSeason));
+
+        Month[] period = {mn.Dec, mn.Jan};
+        System.out.println("new " + w2.getSalary(period));
+
+
+       // System.out.println(b1.getSalary(mn.autumnSeason));
+        //System.out.println(b2.getSalary(mn.autumnSeason));
         System.out.println();
 
 

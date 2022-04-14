@@ -6,52 +6,52 @@ public class HW6 {
 
     public static void main(String[] args) {
 
-        Printing.PrintTask("1");
+        Printing.printTask("1");
         System.out.println("Print sequence [0, 9]");
         descSeq();
         System.out.println();
 
-        Printing.PrintTask("2");
+        Printing.printTask("2");
         System.out.println("Print subsequence (10, 0]");
         ascSeq();
         System.out.println();
 
-        Printing.PrintTask("3");
+        Printing.printTask("3");
         System.out.println("Print seq [50, 55] step width 2");
         seq3();
         System.out.println();
 
-        Printing.PrintTask("4");
+        Printing.printTask("4");
         System.out.println("Print seq (327, 300) multiple of 7");
         seq4();
         System.out.println();
 
-        Printing.PrintTask("5");
+        Printing.printTask("5");
         System.out.println("Print seq [12,13] step width 0.1");
         seq5();
         System.out.println();
 
-        Printing.PrintTask("6");
+        Printing.printTask("6");
         System.out.println("Print seq [215, 237] multiple of 2");
         seq6();
         System.out.println();
 
-        Printing.PrintTask("7");
+        Printing.printTask("7");
         System.out.println("Print seq (7, 14) multiple of 7");
         seq7();
         System.out.println();
 
-        Printing.PrintTask("8");
+        Printing.printTask("8");
         System.out.println("Print seq [-32,768, 32,768] multiple of 15001");
         seq8();
         System.out.println();
 
-        Printing.PrintTask("9");
+        Printing.printTask("9");
         System.out.println("Print seq [-10, 34] multiple of 11 print blue, multiple of 12 print red, 0 is ZERO");
         seq9();
         System.out.println();
 
-        Printing.PrintTask("10");
+        Printing.printTask("10");
         System.out.println("Print user seq with input params start, end, step");
         System.out.println(userSeq(16, 75, 4));
         System.out.println();
@@ -108,9 +108,9 @@ public class HW6 {
 
     public static void seq7(){
 
-        for (int i = 8; i < 14; i++)
+        for (int i = 8; i <= 14; i++)
             if(i % 7 ==0){ // always false
-                System.out.printf(i +" ");
+                System.out.print(i +" ");
             }
 
     }

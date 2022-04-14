@@ -12,35 +12,35 @@ public class HW5 {
     public static void main(String[] args)   {
 
 
-        Printing.PrintTask("2");
+        Printing.printTask("2");
         System.out.println(dayOfWeek(5));
 
-        Printing.PrintTask("3");
+        Printing.printTask("3");
         System.out.println(largestValue(10,2,58));
 
-        Printing.PrintTask("4");
+        Printing.printTask("4");
         System.out.println(smallestValue(10, 64, 1));
         System.out.println(smallestValue2(40, 14, -5));
         System.out.println(Common.Verification.verifyEquals(1, smallestValue(10, 64, 1)));
 
-        Printing.PrintTask("5");
+        Printing.printTask("5");
         System.out.println(avgTemp(37.2, 37.4, 37.1, 37.3, 37.5) + " C");
         System.out.println("Purchase amount: " + findTotal(10.99, 4) + "$");
 
 
 
-        Printing.PrintTask("6");
+        Printing.printTask("6");
         System.out.println(printPrice(472.99f));
 
-        Printing.PrintTask("7");
+        Printing.printTask("7");
         System.out.println(printQuantity(17.010f));
 
-        Printing.PrintTask("8");
+        Printing.printTask("8");
         System.out.println("Total: " + findTotal(5.99, 6));
 
 
 
-        Printing.PrintTask("9");
+        Printing.printTask("9");
         System.out.println(printReceipt("apples", 2.15f, 3));
 
 
@@ -72,7 +72,7 @@ public class HW5 {
 
 
      public static Integer smallestValue(int a, int b, int c){
-        int smallest = 0;
+        int smallest;
 
         if ( b > a && c > a ){
             smallest = a;
@@ -95,7 +95,7 @@ public class HW5 {
 
     public static Double avgTemp(double a, double b, double c, double d, double e){
         double sum = 0;
-        double temp [] = new double[] {a, b, c, d, e};
+        double[] temp = new double[] {a, b, c, d, e};
 
         for (int i =0; i <  temp.length; i++){
             sum += temp[i];
