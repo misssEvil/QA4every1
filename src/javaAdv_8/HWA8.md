@@ -52,3 +52,27 @@ Examples(Operator, value1, value2) --> output
 ('-', 15, 18) --> -3
 ('*', 5, 5) --> 25
 ('/', 49, 7) --> 7
+
+3) https://www.codewars.com/kata/5a00e05cc374cb34d100000d/train/java
+
+Build a function that returns an array of integers from n to 1 where n>0.
+Example : n=5 --> [5,4,3,2,1]
+
+4) https://www.codewars.com/kata/57e76bc428d6fbc2d500036d/train/java
+   
+Write a function to split a string and convert it into an array of words.
+Examples (Input -> Output):
+* "Robin Singh" ==> ["Robin", "Singh"]
+* "I love arrays they are my favorite" ==> ["I", "love", "arrays", "they", "are", "my", "favorite"]
+
+5) https://www.codewars.com/kata/577bd026df78c19bca0002c0/train/java
+
+Character recognition software is widely used to digitise printed texts. Thus the texts can be edited, searched and stored on a computer.
+When documents (especially pretty old ones written with a typewriter), are digitised character recognition softwares often make mistakes.
+
+Your task is correct the errors in the digitised text. You only have to handle the following mistakes:
+* S is misinterpreted as 5
+* O is misinterpreted as 0
+* I is misinterpreted as 1
+
+The test cases contain numbers only by mistake.
