@@ -42,14 +42,48 @@ public class Main8 {
         System.out.println(ArrayUtils.arrayPlusArray(new int[]{100,200,300}, new int[]{400,500,600}));
 
         Printing.printHW("8.2");
+
+        Printing.printTask("1");
+        System.out.println(boolToWord(true));
+        System.out.println(boolToWord(false));
+
         Printing.printTask("2");
-        System.out.println(BasicOperations.basicMath("add", 5, 5));
-        System.out.println(BasicOperations.basicMath("div", 44, 11));
+        System.out.println(BasicOperations.basicMath("+", 5, 5));
+        System.out.println(BasicOperations.basicMath("/", 44, 11));
 
+        Printing.printTask("3");
+        Printing.printingArr(ArrayUtils.reverseArr(5));
 
+        Printing.printTask("4");
+        Printing.printingArr(ArrayUtils.stringToArray("Robin Good"));
+        Printing.printingArr(ArrayUtils.stringToArray("I love arrays they are my favorite"));
+
+        Printing.printTask("5");
+        System.out.println("Correct errors in digitizes text: ");
+        System.out.println(correct("5TEPHEN HAWK1NG - THE UN1VER5E 1N A NUT5HELL"));
+        System.out.println(correct("ERNE5T HEM1NGWAY - F0R WH0M THE BELL T0LL5"));
 
 
 
 
     }
+    public static String boolToWord(boolean b)
+    {
+        if (b == true){
+            return "Yes";
+        }
+        else return "No";
+
+    }
+
+    public static String correct(String str) {
+
+        return str.replace('5', 'S').
+                    replace('0', 'O').
+                    replace('1', 'I');
+
+        }
+
+
+
 }

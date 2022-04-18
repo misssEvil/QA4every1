@@ -12,4 +12,25 @@ public class ArrayUtils {
 
         return sum;
     }
+
+    public static int [] reverseArr(int n){
+        int [] reverse = new int[n];
+
+        for (int i = 0; i < reverse.length; i++){
+            reverse[i] = n;
+            n--;
+        }
+        return reverse;
+    }
+
+    public static String[] stringToArray(String s) {
+        //String [] str = s.split(" ");
+
+        return s.split(" ");
+
+
+
+
+    }
+
 }

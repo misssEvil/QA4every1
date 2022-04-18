@@ -15,22 +15,22 @@ public class Printing {
     }
 
     public  static void printingArr(String [] arr){
-        for (int i = 0; i < arr.length; i++){
-            System.out.print(arr[i] + " ");
+        for (String s : arr) {
+            System.out.print(s + ",");
         }
         System.out.println();
     }
 
     public  static void printingArr(int [] arr){
-        for (int i = 0; i < arr.length; i++){
-            System.out.print(arr[i] + " ");
+        for (int j : arr) {
+            System.out.print(j + ",");
         }
         System.out.println();
     }
 
     public  static void printingArr(boolean [] arr){
-        for (int i = 0; i < arr.length; i++){
-            System.out.print(arr[i] + " ");
+        for (boolean b : arr) {
+            System.out.print(b + " ");
         }
         System.out.println();
     }
