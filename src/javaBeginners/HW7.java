@@ -139,7 +139,7 @@ public class HW7 {
 
         Printing.printTask("19");
         int [] array4 = new int[10];
-        fillArrayRandomWideRange(array4,1000,900);
+        fillArrayRandomWideRange(array4,-1000,-900);
         Printing.printingArr(array4);
 
 
@@ -148,8 +148,8 @@ public class HW7 {
 
     public static int findAvgValue(int[] arr) {
         int avg = 0;
-        for (int i = 0; i < arr.length; i++) {
-            avg = avg + arr[i];
+        for (int j : arr) {
+            avg = avg + j;
         }
         return avg / arr.length;
     }
@@ -176,8 +176,8 @@ public class HW7 {
 
     public static int amountOfCatsByColor(String[] arr, String str) {
         int amnt = 0;
-        for (int i = 0; i < arr.length; i++) {
-            if (arr[i].equals(str)) {
+        for (String s : arr) {
+            if (s.equals(str)) {
                 amnt += 1;
             }
 
@@ -219,10 +219,18 @@ public class HW7 {
         }
     }
 
+    /*
+    public static int rnd(int min, int max){
+    int diapason = max + Math.abs(min) + 1;
+    return  (int) (Math.random() * diapason) - max;
+}
+     */
+
     public static void fillArrayRandomWideRange(int [] arr, int min, int max){
 
         for (int i = 0; i < arr.length; i++){
-            int element = (int) Math.floor(Math.random()*(max-min+1)+min);
+            int range = max + Math.abs(min) + 1;
+            int element = (int) (Math.random() * range) - max;
             if (element % 2 == 1) {
                 arr[i] = -element;
             }
