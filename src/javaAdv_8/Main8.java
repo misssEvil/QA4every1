@@ -63,13 +63,10 @@ public class Main8 {
         System.out.println(correct("5TEPHEN HAWK1NG - THE UN1VER5E 1N A NUT5HELL"));
         System.out.println(correct("ERNE5T HEM1NGWAY - F0R WH0M THE BELL T0LL5"));
 
-
-
-
     }
     public static String boolToWord(boolean b)
     {
-        if (b == true){
+        if (b){
             return "Yes";
         }
         else return "No";

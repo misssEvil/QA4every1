@@ -4,7 +4,7 @@ public class Printing {
 
     public static void printHW(String t){
 
-        System.out.println();
+        //System.out.println();
         System.out.println("\u001B[35m*** Home work number " + t + " ***\u001B[0m");
     }
 
