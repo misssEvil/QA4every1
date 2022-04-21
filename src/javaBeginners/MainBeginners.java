@@ -1,10 +1,14 @@
 package javaBeginners;
 
+import Common.ArrUtils;
 import Common.Printing;
+import java.util.ArrayList;
+import java.util.List;
+
 
 public class MainBeginners {
     public static void main(String[] args) {
-
+/*
         Printing.printHW("5");
         Printing.printTask("2");
         System.out.println(HW5.dayOfWeek(5));
@@ -223,8 +227,117 @@ public class MainBeginners {
         int [] array4 = new int[10];
         HW7.fillArrayRandomWideRange(array4,1000,900);
         Printing.printingArr(array4);
+*/
+// ---------------------------------------------------------------------------------------------------------
 
         Printing.printHW("8");
+        Printing.printTask("5");
+        HW8 hw8 = new HW8();
+        HW8_1 hw8_1 = new HW8_1();
+
+        System.out.println("HW8\t \t\t\t\t |HW8_1\t\t\t\t\t\t|areEquals?");
+        System.out.println("-------------------------------------------");
+
+        System.out.println("Integer num = " + hw8.num + "\t |Integer num1 = " + hw8_1.num1 +"\t\t|" + (hw8.num == hw8_1.num1));
+        System.out.println("String str = " + hw8.str + "\t |String str1 = " + hw8_1.str1 +"\t\t|" + hw8.str.equals(hw8_1.str1));
+        System.out.println("Double d = " + hw8.d + "\t\t |Double d1 = " + hw8_1.d1 +"\t\t\t|" + (hw8.d == hw8_1.d1));
+
+        Printing.printTask("6");
+        Printing.printingArr(Helper.toArray(5, 11, -4, 72, 11));
+
+        Printing.printTask("7");
+        Printing.printingArr(Helper.toArray(11.0, 58.2, 78.5, 4.01, 7.7));
+
+        Printing.printTask("8");
+        Printing.printingArr(Helper.toArray("loving", "you", "is", "the", "antidote"));
+
+        Printing.printTask("9");
+        System.out.println("Array of int numbers multiplied by 2.5");
+        Printing.printingArr(ArrUtils.multArr(new int [] {4, 4, 11}, 2.5));
+
+        Printing.printTask("10-11");
+        System.out.println("Number of even nums in array {16, 4, 8, 47, 21} is " + ArrUtils.numberOfEvenNums(new int[] {16, 4, 8, 47, 21}));
+        System.out.println("Number of odd nums in array {16, 4, 8, 47, 21} is " + ArrUtils.numberOfOddNums(new int[] {16, 4, 8, 47, 21}));
+
+        Printing.printTask("12");
+        System.out.println("Nums in array {4, 52, 17, 63, 20} more than 10: ");
+        Printing.printingArr(Helper.numsInArrMore(new int[] {4, 52, 17, 63, 20}, 10));
+
+        Printing.printTask("13");
+        System.out.println(Helper.arrToString(new String[] {"phisically", "I'm", "fine", "emotionally", "I'm", "bruised"}));
+
+        Printing.printTask("14");
+        System.out.println("Calculating sum of the second part of thу array {1, 2, 1, 5}. Sum = "
+                + Helper.SumHalfArr(new int[] {1, 2, 1, 5} ));
+        System.out.println("Calculating sum of the second part of thу array {14, 2, 1, 7, 3}. Sum = "
+                + Helper.SumHalfArr(new int[] {14, 2, 1, 7, 3} ));
+
+        Printing.printTask("15");
+        System.out.println("Multiplication table by 4: ");
+        Printing.printingArr(Helper.multTable(4));
+
+        Printing.printTask("16");
+        Printing.printingArr(Helper.evenSeq(20));
+
+
+
+        List <String> animals = new ArrayList<>();
+
+        animals.add("Lion");
+        animals.add("Tiger");
+        animals.add("Panter");
+
+        System.out.println(animals);
+        System.out.println(animals.get(1));
+
+        animals.add(2, "Cat");
+
+        System.out.println(animals);
+
+        Printing.printTask("17");
+        System.out.println(Helper.checkArr(new int[] {11, 6, 8, 3, 13}));
+        System.out.println(Helper.checkArr(new int[] {12, 6, 8, 34, 13}));
+        System.out.println(Helper.checkArr(new int[] {10, 6, 3, 7}));
+
+        Printing.printTask("18");
+        ArrUtils.fillWithRandoms(100, 10);
+
+        Printing.printTask("19");
+        System.out.println(Helper.listOfNumsCapacity(10, 2));
+        System.out.println(Helper.listOfNumsCapacity(10, 3));
+        System.out.println(Helper.listOfNumsCapacity(10, 4));
+
+        Printing.printTask("20");
+        List <Integer> l20 = new ArrayList<>();
+       // System.out.println("Creating an array " + ArrUtils.fillWithRandomsRange(l20, 15, 1, 100));
+        System.out.println("Creating an array " + ArrUtils.fillWithRandomsRange(l20, 15, 1, 1000));
+        System.out.println("Keep only elements with digital capacity equals 2 " + Helper.keepDigCapacity(l20,2));
+        System.out.println("Creating an array " + ArrUtils.fillWithRandomsRange(l20, 15, 100, 10000));
+        System.out.println("Keep only elements with digital capacity equals 3 " + Helper.keepDigCapacity(l20,3));
+
+        Printing.printTask("21");
+        List <Integer> l21 = new ArrayList<>();
+        System.out.println("Creating an array " + ArrUtils.fillWithRandomsRange(l21, 15, 1, 100));
+        System.out.println(Helper.diffBetweenTensOnes(l21));
+        System.out.println();
+
+        Printing.printTask("22");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     }
