@@ -1,5 +1,8 @@
 package Common;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Printing {
 
     public static void printHW(String t){
@@ -16,14 +19,26 @@ public class Printing {
 
     public  static void printingArr(String [] arr){
         for (String s : arr) {
-            System.out.print(s + ",");
+            System.out.print(s + " ");
         }
         System.out.println();
     }
 
     public  static void printingArr(int [] arr){
         for (int j : arr) {
-            System.out.print(j + ",");
+            System.out.print(j + " ");
+        }
+        System.out.println();
+    }
+
+    public  static void printingArr(List <Integer> arr){
+            System.out.println(arr);
+
+    }
+
+    public  static void printingArr(double [] arr){
+        for (double v : arr) {
+            System.out.print(v + " ");
         }
         System.out.println();
     }
@@ -34,6 +49,8 @@ public class Printing {
         }
         System.out.println();
     }
+
+
 
 
 }
