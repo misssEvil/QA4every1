@@ -1,9 +1,9 @@
 package javaAdv_7;
 
-public class Month {
+public final class Month {
 
-    private String nameOfMonth;
-    private int numberOfDays;
+    private final String nameOfMonth;
+    private final int numberOfDays;
 
     public Month(String nameOfMonth, int numberOfDays) {
         this.nameOfMonth = nameOfMonth;
@@ -14,17 +14,10 @@ public class Month {
         return nameOfMonth;
     }
 
-    public void setNameOfMonth(String nameOfMonth) {
-        this.nameOfMonth = nameOfMonth;
-    }
-
     public int getNumberOfDays() {
         return numberOfDays;
     }
 
-    public void setNumberOfDays(int numberOfDays) {
-        this.numberOfDays = numberOfDays;
-    }
 
 
 }

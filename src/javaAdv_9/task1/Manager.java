@@ -1,8 +1,9 @@
-package javaAdv_9;
+package javaAdv_9.task1;
 
-public class Manager extends Employee {
+public final class Manager extends Employee {
 
     private int numOfSubs;
+    private static final int SALARY_COEF = 3;
 
     public Manager(String name, int age, float salary) {
         super(name, age, salary);
@@ -20,7 +21,7 @@ public class Manager extends Employee {
             return BASE_SALARY_PER_MONTH;
         }
         else {
-            return BASE_SALARY_PER_MONTH * numOfSubs / 100 * 3;
+            return BASE_SALARY_PER_MONTH * numOfSubs / 100 * SALARY_COEF;
         }
     }
 

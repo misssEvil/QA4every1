@@ -23,10 +23,6 @@ public class Worker {
         this.ratePerDay = ratePerDay;
     }
 
-
-
-
-
     public String getName() {
         return name;
     }
@@ -51,7 +47,7 @@ public class Worker {
         this.gender = gender;
     }
 
-     float getSalary (Month [] monthArr){
+     public float getSalary (Month [] monthArr){
         float salary = 0;
 
          for (Month month : monthArr) {
@@ -59,6 +55,12 @@ public class Worker {
 
          }
         return salary;
+    }
+
+    public float getSalary (Month month){
+        float salary = 0;
+
+        return month.getNumberOfDays() * this.ratePerDay;
     }
 
 

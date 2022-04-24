@@ -1,6 +1,15 @@
 # HWA 9
 
-## Задача №1
+## Part 1
+https://docs.google.com/document/d/1YJxse397IYq7znAa8MN7GUR1zOJPFZ3JwFRSzvEBT7Q/edit
+
+Необходимо написать тесты для любого метода из подключенной библиотеки (можно использовать StringUtils) или можно написать свой метод и протестировать его. Тесты должны запускаться через TestNG.
+
+
+## Part 2
+https://docs.google.com/document/d/1okWl3kptc8jABadlAiETZr6whr7t24NjOZPRG6iFhNA/edit
+
+### Задача №1
 
 Необходимо реализовать задание из Task со следующими условиями:
 * Employee.getSalary должен быть абстрактный

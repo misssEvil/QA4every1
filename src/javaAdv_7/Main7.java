@@ -86,24 +86,17 @@ public class Main7 {
         Boss b2 = new Boss("Mitch", 21, 'N', 4f,10);
 
 
-        MonthUtils mn = new MonthUtils();
+       // MonthUtils mn = new MonthUtils();
 
+        //Month[] period = {mn.Dec, mn.Jan};
+        System.out.println(w2.getName() + "'s salary: \tDec = " + w2.getSalary(MonthUtils.Dec));
+        System.out.println(" \t \t \t \tfirstQuater = " + w2.getSalary(MonthUtils.firstQuater()));
+        System.out.println(" \t \t \t \tsecondQuater = " + w2.getSalary(MonthUtils.secondQuater()));
+        System.out.println(" \t \t \t \tthirdQuater = " + w2.getSalary(MonthUtils.thirdQuater()));
+        System.out.println(" \t \t \t \tfourthQuater = " + w2.getSalary(MonthUtils.fourthQuater()));
+        System.out.println(" \t \t \t \tfirstHalf = " + w2.getSalary(MonthUtils.firstQuater()));
+        System.out.println(" \t \t \t \tyear = " + w2.getSalary(MonthUtils.year()));
 
-       // System.out.println(w1.getSalary(mn.summerSeason));
-
-
-       // w1.getSalary({Feb, Nov, Jan});
-
-
-
-       // System.out.println(w2.getSalary(mn.summerSeason));
-
-        Month[] period = {mn.Dec, mn.Jan};
-        System.out.println("new " + w2.getSalary(period));
-
-
-       // System.out.println(b1.getSalary(mn.autumnSeason));
-        //System.out.println(b2.getSalary(mn.autumnSeason));
         System.out.println();
 
 
