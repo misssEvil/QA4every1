@@ -3,12 +3,13 @@ package javaBeginners;
 import Common.ArrUtils;
 import Common.Printing;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 
 public class MainBeginners {
     public static void main(String[] args) {
-/*
+
         Printing.printHW("5");
         Printing.printTask("2");
         System.out.println(HW5.dayOfWeek(5));
@@ -189,13 +190,13 @@ public class MainBeginners {
         }
 
         Printing.printTask("12");
-        System.out.println("Average age of cats is " + HW7.findAvgValue(catsAges));
+        System.out.println("Average age of cats is " + ArrUtils.findAvgValue(catsAges));
 
         Printing.printTask("13");
-        System.out.println("The youngest cat is " + HW7.findMinValue(catsAges) + " y.o.");
+        System.out.println("The youngest cat is " + ArrUtils.findMinValue(catsAges) + " y.o.");
 
         Printing.printTask("14");
-        System.out.println("The oldest cat is " + HW7.findMaxValue(catsAges) + " y.o.");
+        System.out.println("The oldest cat is " + ArrUtils.findMaxValue(catsAges) + " y.o.");
 
         Printing.printTask("15");
         System.out.println("Amount of grey cats in an array is " + HW7.amountOfCatsByColor(catColors, "grey"));
@@ -210,24 +211,24 @@ public class MainBeginners {
         Printing.printTask("17");
         System.out.println("Filling an array with random numbers ");
         int[] array = new int[10];
-        HW7.fillArrayWithRandoms(array, 20);
+        ArrUtils.fillWithRandoms(array, 20);
         Printing.printingArr(array);
 
         System.out.println("Filling an array with even random numbers ");
         int[] array2 = new int[10];
-        HW7.fillArrayWithEvenRandoms(array2, 20);
+        ArrUtils.fillWithEvenRandoms(array2, 20);
         Printing.printingArr(array2);
 
         System.out.println("Filling an array with odd random numbers ");
         int[] array3 = new int[10];
-        HW7.fillArrayWithOddRandoms(array3, 20);
+        ArrUtils.fillWithOddRandoms(array3, 20);
         Printing.printingArr(array3);
 
         Printing.printTask("19");
         int [] array4 = new int[10];
-        HW7.fillArrayRandomWideRange(array4,1000,900);
+        ArrUtils.fillWithRandomsRange(array4,1000,900);
         Printing.printingArr(array4);
-*/
+
 // ---------------------------------------------------------------------------------------------------------
 
         Printing.printHW("8");
@@ -322,15 +323,22 @@ public class MainBeginners {
         System.out.println();
 
         Printing.printTask("22");
+        Printing.printingArr(Helper.formatPhoneNum(new int [] {1, 8, 0, 8, 7, 2, 1, 3, 5, 6, 6}));
+        Printing.printingArr(Helper.formatPhoneNum(new int [] {4, 4, 8, 0, 8, 7, 2, 1, 3, 5, 6, 6}));
 
 
 
+        class Main {
+            public static int square(int num) {
+                return num * num;
+            }
 
-
-
-
-
-
+            public static void main(String[] args) {
+                int result;
+                result = square(10);
+                System.out.println("Squared value of 10 is: " + result);
+            }
+        }
 
 
 

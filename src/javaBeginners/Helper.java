@@ -125,5 +125,39 @@ public class Helper {
         return arrList;
     }
 
+    public static String [] formatPhoneNum(int [] arr){
+      //  String phone = "";
+        String [] s = new String[2];
+        s[0] = "";
+        String prefix= "";
+
+
+        for (int i = 0; i < arr.length; i++){
+                s[0] += Integer.toString(arr[i]);
+        }
+        StringBuffer newPhone = new StringBuffer(s[0]);
+        if (arr.length == 11) {
+
+            newPhone.insert(1, "(").insert(5, ")").insert(9, "-").insert(12, "-");
+            prefix += Integer.toString(arr[0]);
+        }
+        else {
+            newPhone.insert(2, "(").insert(6, ")").insert(10, "-").insert(13, "-");
+            prefix = Integer.toString(arr[0]).concat(Integer.toString(arr[1]));
+        }
+
+
+        s[0] = newPhone.toString();
+        switch (prefix){
+            case "1":
+                s[1] = "USA";
+                break;
+            case "44":
+                s[1] = "Columbia";
+                break;
+        }
+        return s;
+        }
+
 
 }
