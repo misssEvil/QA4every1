@@ -1,7 +1,6 @@
 package javaBeginners;
 
 public class HW7 {
-
     public static int amountOfCatsByColor(String[] arr, String str) {
         int amnt = 0;
         for (String s : arr) {

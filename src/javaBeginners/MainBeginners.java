@@ -280,21 +280,14 @@ public class MainBeginners {
         Printing.printTask("16");
         Printing.printingArr(Helper.evenSeq(20));
 
-
-
         List <String> animals = new ArrayList<>();
-
         animals.add("Lion");
         animals.add("Tiger");
         animals.add("Panter");
-
         System.out.println(animals);
         System.out.println(animals.get(1));
-
         animals.add(2, "Cat");
-
         System.out.println(animals);
-
         Printing.printTask("17");
         System.out.println(Helper.checkArr(new int[] {11, 6, 8, 3, 13}));
         System.out.println(Helper.checkArr(new int[] {12, 6, 8, 34, 13}));
@@ -310,7 +303,6 @@ public class MainBeginners {
 
         Printing.printTask("20");
         List <Integer> l20 = new ArrayList<>();
-       // System.out.println("Creating an array " + ArrUtils.fillWithRandomsRange(l20, 15, 1, 100));
         System.out.println("Creating an array " + ArrUtils.fillWithRandomsRange(l20, 15, 1, 1000));
         System.out.println("Keep only elements with digital capacity equals 2 " + Helper.keepDigCapacity(l20,2));
         System.out.println("Creating an array " + ArrUtils.fillWithRandomsRange(l20, 15, 100, 10000));
@@ -325,28 +317,6 @@ public class MainBeginners {
         Printing.printTask("22");
         Printing.printingArr(Helper.formatPhoneNum(new int [] {1, 8, 0, 8, 7, 2, 1, 3, 5, 6, 6}));
         Printing.printingArr(Helper.formatPhoneNum(new int [] {4, 4, 8, 0, 8, 7, 2, 1, 3, 5, 6, 6}));
-
-
-
-        class Main {
-            public static int square(int num) {
-                return num * num;
-            }
-
-            public static void main(String[] args) {
-                int result;
-                result = square(10);
-                System.out.println("Squared value of 10 is: " + result);
-            }
-        }
-
-
-
-
-
-
-
-
 
     }
 }
