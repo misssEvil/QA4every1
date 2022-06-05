@@ -20,7 +20,7 @@ public class HW6 {
         int n = 2;
         for (int i = 50; i<= 55; i+=n){
             System.out.print(i + " ");
-        }  // if ()
+        }
     }
 
     public static void seq4(){
@@ -36,7 +36,6 @@ public class HW6 {
         for ( double i = 13; i >= 12; i -= n ){
             System.out.print(String.format("%,.1f", i) + " ");
         }
-
     }
 
     public static void seq6(){
@@ -60,7 +59,6 @@ public class HW6 {
             if ( i % 15001 == 0){
                 System.out.print(i + " ");
             }
-
         }
     }
 

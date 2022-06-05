@@ -104,8 +104,6 @@ public class Helper {
 
         for (int i = 0; i < list.size(); i++){
            if ((list.get(i) > min) && (list.get(i) < max)){
-                    //
-               //System.out.println(list.get(i));
            }
                 else {
                 list.remove(i);
@@ -119,21 +117,18 @@ public class Helper {
         for (int i = 0; i < arrList.size(); i++){
             System.out.print(arrList.get(i)/10 + "-" + (arrList.get(i) - arrList.get(i)/10*10) + " , ");
             arrList.set(i, (arrList.get(i)/10 - (arrList.get(i) - arrList.get(i)/10*10)));
-
         }
         System.out.println();
         return arrList;
     }
 
     public static String [] formatPhoneNum(int [] arr){
-      //  String phone = "";
         String [] s = new String[2];
         s[0] = "";
         String prefix= "";
 
-
-        for (int i = 0; i < arr.length; i++){
-                s[0] += Integer.toString(arr[i]);
+        for (int j : arr) {
+            s[0] += Integer.toString(j);
         }
         StringBuffer newPhone = new StringBuffer(s[0]);
         if (arr.length == 11) {
