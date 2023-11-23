@@ -1,3 +1,3 @@
-# QA4every1_java
+# RedRover_javaAdvHW
 
 Java Home works for Sergei's course
